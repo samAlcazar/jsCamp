@@ -38,6 +38,11 @@ body {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
 /* Títulos principales */
 h1 {
   font-size: 1.5rem;
