@@ -428,15 +428,6 @@ footer {
       color: var(--text-primary);
       font-size: .8rem;
     }
-
-    button {
-      padding: .5rem 1rem;
-      background-color: var(--primary-hover);
-      color: var(--text-primary);
-      border: none;
-      border-radius: .5rem;
-      cursor: pointer;
-    }
   }
 
   article:last-child {
@@ -465,14 +456,24 @@ footer {
       height: 30px;
       border-radius: .5rem;
       cursor: pointer;
-    }
 
-    :hover {
-      background-color: var(--primary-hover);
-    }
+      &:hover {
+        background-color: var(--primary-hover);
+      }
 
-    :active {
-      transform: scale(.9);
+      &:active {
+        transform: scale(.9);
+      }
     }
+  }
+}
+
+.button-apply-job {
+  background-color: var(--primary-light);
+
+  &.is-applied {
+    background-color: green;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
